@@ -26,7 +26,7 @@ public class UserClassicResource {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public UserClassic create(final UserClassic user) {
-        System.out.println("Created user: " + user);
+        System.out.printf("Create user %s (%s)%n", user, getClass());
         return user;
     }
 }

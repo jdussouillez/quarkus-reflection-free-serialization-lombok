@@ -25,7 +25,7 @@ public class UserFluentChainResource {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public UserFluentChain create(final UserFluentChain user) {
-        System.out.println("Created user: " + user);
+        System.out.printf("Create user %s (%s)%n", user, getClass());
         return user;
     }
 }
