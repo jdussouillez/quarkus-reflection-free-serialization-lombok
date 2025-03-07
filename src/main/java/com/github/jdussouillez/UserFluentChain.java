@@ -22,7 +22,7 @@ public class UserFluentChain {
     @JsonProperty(required = true)
     protected String name;
 
-    @Retention(RetentionPolicy.RUNTIME)
+    @Retention(RetentionPolicy.CLASS)
     public @interface MyCustomAnnotation {
     }
 }
